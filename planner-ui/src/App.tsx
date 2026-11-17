@@ -718,7 +718,7 @@ function App() {
               </div>
               <div className="public-demo-links">
                 <a
-                  href="https://github.com/Erivan011/Logistics-solution"
+                  href="https://github.com/Erivan011/RoutePlan"
                   target="_blank"
                   rel="noreferrer"
                 >
