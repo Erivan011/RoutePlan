@@ -4,7 +4,7 @@ services:
   - type: web
     name: erivan-logistics-intelligence
     runtime: docker
-    repo: https://github.com/Erivan011/Logistics-solution
+    repo: https://github.com/Erivan011/RoutePlan
     branch: main
     plan: free
     region: oregon

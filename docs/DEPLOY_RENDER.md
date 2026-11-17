@@ -4,7 +4,7 @@ Este repositório inclui um Blueprint `render.yaml` para executar a interface Re
 
 ## Publicar
 
-1. Conecte sua conta Render e autorize o acesso a `Erivan011/Logistics-solution`.
+1. Conecte sua conta Render e autorize o acesso a `Erivan011/RoutePlan`.
 2. Crie um Blueprint a partir da branch `main` e do arquivo `render.yaml`.
 3. Confira os dois recursos no plano **Free** antes de concluir. Não é necessário selecionar planos pagos para esta configuração.
 4. Aguarde o build Docker e o health check `/api/health`. Use a URL real fornecida pelo Render quando o deploy estiver `live`; o nome do serviço não garante a disponibilidade de um endereço específico.
