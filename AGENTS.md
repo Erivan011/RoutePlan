@@ -7,7 +7,9 @@ Projeto pessoal de portfólio de planejamento logístico com dados demonstrativo
 - Usar scripts determinísticos para tarefas repetitivas. Um agente executa e valida; não criar equipes para mudanças pequenas.
 - Responder em português. Ao terminar, informar mudança, evidência, testes e bloqueios; citar PR/commit. Sem evidência, registrar pendente.
 - Atualizar a memória com até um resumo curto por tarefa, sem segredos; condensar histórico repetitivo.
-- Não instalar serviços pagos, usar modelos pagos ou mudar o modelo automaticamente. Não usar Gemini/NVIDIA neste projeto até existir configuração e teste explícitos do proprietário. Ao esgotar cota gratuita, parar e registrar o bloqueio, sem fallback pago ou tentativas ilimitadas.
+- APIs externas de IA (incluindo Gemini e NVIDIA/Nemotron via OmniRoute) só podem ser usadas quando configuradas explicitamente para este projeto e após uma chamada manual de teste com entrada sintética. Não presumir que assinatura de chat cobre API, que uma cota seja gratuita ou ilimitada; verificar a política e o uso no provedor. Sem fallback pago, troca automática, repetição ilimitada ou execução agendada de chamadas de modelo.
+- O proprietário autorizou considerar APIs configuradas para o trabalho dos agentes; isso não autoriza inserir a API no produto, automatizar custos, publicar, nem usar credenciais em prompts. Nunca enviar chave, token, dado de operação ou segredo a um modelo.
+- A rota OmniRoute testada no Codespace do RiskLab depende daquele Codespace e pode ficar indisponível. Não usá-la como serviço permanente nem presumir que está pronta para RoutePlan; verificar conexão e modelo para este projeto antes de cada uso.
 - As instruções não impõem um teto técnico de tokens ou cobrança. Não afirmar gasto zero ou execução contínua sem verificar o provedor e o executor.
 - Não fazer merge, deploy, migração de banco, alteração de permissões nem ações em contas externas automaticamente. Entregar branch/PR revisável.
 - Jamais consultar Dogma ou importar seus dados, credenciais ou contexto para este projeto. Usar dados demonstrativos e sintéticos.
