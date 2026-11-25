@@ -48,6 +48,7 @@ test("standalone preview renders recorded solver output and rejects mutations", 
   assert.equal(optimize.disabled, true);
   assert.equal($("[role=dialog]"), null);
   assert.match($(".public-demo-banner").textContent, /DEMONSTRAÇÃO/);
+  assert.equal($(".public-demo-links a").href, "https://github.com/Erivan011/RoutePlan");
   const denied = await dom.window.fetch("/api/scenarios", { method: "POST" });
   assert.equal(denied.status, 403);
 });

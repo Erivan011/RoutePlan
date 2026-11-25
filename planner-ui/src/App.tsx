@@ -707,18 +707,17 @@ function App() {
               aria-label="Demonstração pública"
             >
               <div>
-                <span className="eyebrow">DEMONSTRAÇÃO</span>
+                <span className="demo-badge"><RouteIcon size={14} /> DEMONSTRAÇÃO · SOMENTE LEITURA</span>
                 <h2>Plano de distribuição · São Paulo</h2>
                 <p>
                   Plano calculado com dados fictícios em{" "}
                   {scenario?.planning_date.split("-").reverse().join("/")}.
-                  Consulte as rotas, os pedidos e a separação dos lotes. Esta
-                  demonstração é somente leitura.
+                  Explore as rotas, os pedidos e a separação dos lotes no painel.
                 </p>
               </div>
               <div className="public-demo-links">
                 <a
-                  href="https://github.com/Erivan011/Logistics-solution"
+                  href="https://github.com/Erivan011/RoutePlan"
                   target="_blank"
                   rel="noreferrer"
                 >

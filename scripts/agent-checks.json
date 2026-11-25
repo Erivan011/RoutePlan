@@ -41,6 +41,14 @@
         "run",
         "test:ui"
       ]
+    ],
+    [
+      "design-navegacao",
+      "Navegação local, responsividade e proposta visual comparada",
+      [
+        "python3",
+        "scripts/visual_agent.py"
+      ]
     ]
   ]
 }
