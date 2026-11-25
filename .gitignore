@@ -9,3 +9,6 @@ planner-ui/dist/
 *.db
 *.db-*
 planner/static/
+
+# Histórico local dos agentes
+.agent-state/

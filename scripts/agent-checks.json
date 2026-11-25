@@ -1,0 +1,54 @@
+{
+  "name": "RoutePlan",
+  "checks": [
+    [
+      "build",
+      "Build React e documentação local da API",
+      [
+        "npm",
+        "run",
+        "build:ui"
+      ]
+    ],
+    [
+      "solver",
+      "Capacidade, FEFO e janelas",
+      [
+        "python3",
+        "-m",
+        "pytest",
+        "tests/planner/test_optimizer.py",
+        "-q"
+      ]
+    ],
+    [
+      "demo-api",
+      "Contrato da API e isolamento da demonstração",
+      [
+        "python3",
+        "-m",
+        "pytest",
+        "tests/planner/test_api.py",
+        "tests/planner/test_public_demo.py",
+        "-q"
+      ]
+    ],
+    [
+      "interface",
+      "Contratos da interface e build da demonstração",
+      [
+        "npm",
+        "run",
+        "test:ui"
+      ]
+    ],
+    [
+      "design-navegacao",
+      "Navegação local, responsividade e proposta visual comparada",
+      [
+        "python3",
+        "scripts/visual_agent.py"
+      ]
+    ]
+  ]
+}
