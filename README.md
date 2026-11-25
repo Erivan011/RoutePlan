@@ -222,3 +222,7 @@ scripts/                    Inicialização, build e exportação de prévia
 tests/planner/              Testes Python
 docs/                       Arquitetura, algoritmo e exemplo reproduzível
 ```
+
+## Agentes de manutenção
+
+[Execução, histórico e diagnóstico local](docs/agentes/EXECUCAO.md).
